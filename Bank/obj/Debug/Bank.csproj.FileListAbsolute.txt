@@ -1,0 +1,9 @@
+C:\Users\sergey\Documents\Visual Studio 2017\Projects\Bank\Bank\bin\Debug\Bank.exe.config
+C:\Users\sergey\Documents\Visual Studio 2017\Projects\Bank\Bank\bin\Debug\Bank.exe
+C:\Users\sergey\Documents\Visual Studio 2017\Projects\Bank\Bank\bin\Debug\Bank.pdb
+C:\Users\sergey\Documents\Visual Studio 2017\Projects\Bank\Bank\obj\Debug\Bank.csprojResolveAssemblyReference.cache
+C:\Users\sergey\Documents\Visual Studio 2017\Projects\Bank\Bank\obj\Debug\Bank.Form1.resources
+C:\Users\sergey\Documents\Visual Studio 2017\Projects\Bank\Bank\obj\Debug\Bank.Properties.Resources.resources
+C:\Users\sergey\Documents\Visual Studio 2017\Projects\Bank\Bank\obj\Debug\Bank.csproj.GenerateResource.Cache
+C:\Users\sergey\Documents\Visual Studio 2017\Projects\Bank\Bank\obj\Debug\Bank.exe
+C:\Users\sergey\Documents\Visual Studio 2017\Projects\Bank\Bank\obj\Debug\Bank.pdb
