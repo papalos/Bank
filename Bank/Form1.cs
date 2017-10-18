@@ -37,57 +37,56 @@ namespace Bank
         /* Вкладка для проверки работы с математическими функциями задачи 3 */
         private void button3_Click(object sender, EventArgs e)
         {
-            if (Fac.Checked)
+            try
             {
-                number.Text = MathEx.Fact(int.Parse(number.Text)).ToString();
-            }
-            else if (Reciproc.Checked)
-            {
-                number.Text = MathEx.Reciprocal(int.Parse(number.Text)).ToString();
-            }
-            else if (FracPart.Checked)
-            {
-                try
+                if (Fac.Checked)
+                {
+                    number.Text = MathEx.Fact(int.Parse(number.Text)).ToString();
+                    err2.Text = "Ошибок нет!";
+                }
+                else if (Reciproc.Checked)
+                {
+                    number.Text = MathEx.Reciprocal(int.Parse(number.Text)).ToString();
+                    err2.Text = "Ошибок нет!";
+                }
+                else if (FracPart.Checked)
                 {
                     number.Text = MathEx.FracPart(double.Parse(number.Text)).ToString();
+                    err2.Text = "Ошибок нет!";
                 }
-                catch (FormatException)
+                else if (IsEven.Checked)
                 {
-                    err2.Text = "Неверный формат данных! Дробная часть отделяется запятой.";
+                    number.Text = MathEx.IsEven(int.Parse(number.Text)).ToString();
+                    err2.Text = "Ошибок нет!";
                 }
-                
-            }
-            else if (IsEven.Checked)
-            {
-                number.Text = MathEx.IsEven(int.Parse(number.Text)).ToString();
-            }
-            else if (IsOdd.Checked)
-            {
-                number.Text = MathEx.IsOdd(int.Parse(number.Text)).ToString();
-            }
-            else if (Crt.Checked)
-            {
-                number.Text = MathEx.Crt(int.Parse(number.Text)).ToString();
-            }
-            else if (DegToRad.Checked)
-            {
-                number.Text = MathEx.DegToRad(int.Parse(number.Text)).ToString();
-            }
-            else if (RadToDeg.Checked)
-            {
-                try
+                else if (IsOdd.Checked)
+                {
+                    number.Text = MathEx.IsOdd(int.Parse(number.Text)).ToString();
+                    err2.Text = "Ошибок нет!";
+                }
+                else if (Crt.Checked)
+                {
+                    number.Text = MathEx.Crt(int.Parse(number.Text)).ToString();
+                    err2.Text = "Ошибок нет!";
+                }
+                else if (DegToRad.Checked)
+                {
+                    number.Text = MathEx.DegToRad(int.Parse(number.Text)).ToString();
+                    err2.Text = "Ошибок нет!";
+                }
+                else if (RadToDeg.Checked)
                 {
                     number.Text = MathEx.RadToDeg(double.Parse(number.Text)).ToString();
+                    err2.Text = "Ошибок нет!";
                 }
-                catch (FormatException)
+                else
                 {
-                    err2.Text = "Неверный формат данных! Дробная часть отделяется запятой.";
+                    throw new Exception("Не выбрано ни одной операции");
                 }
-                
             }
-            else
+            catch (FormatException)
             {
-                throw new Exception("Не выбрано ни одной операции");
+                err2.Text = "Неверный формат данных! Дробная часть отделяется запятой.";
             }
         }
     }
